@@ -28,4 +28,32 @@ el.classList.add("show");
 
 });
 
+});window.addEventListener("scroll", function() {
+  let skills = document.querySelector(".skills");
+  let position = skills.getBoundingClientRect().top;
+  let screen = window.innerHeight;
+
+  if (position < screen) {
+    document.querySelectorAll(".fill").forEach(el => {
+      el.style.width = el.classList.contains("html") ? "85%" :
+                       el.classList.contains("css") ? "70%" :
+                       el.classList.contains("js") ? "60%" :
+                       el.classList.contains("python") ? "55%" : "50%";
+    });
+  }
+});
+<script src="script.js"></script>
+</body>
+</html>
+const hiddenElements = document.querySelectorAll('.hidden');
+
+window.addEventListener('scroll', () => {
+  hiddenElements.forEach(el => {
+    const elementTop = el.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (elementTop < windowHeight - 100) {
+      el.classList.add('show');
+    }
+  });
 });
