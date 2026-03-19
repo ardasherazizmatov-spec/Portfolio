@@ -57,3 +57,30 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+}
+const text = "Hi, I'm Ardasher";
+let index = 0;
+
+function typingEffect() {
+  if (index < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typingEffect, 100);
+  }
+}
+
+typingEffect();
+window.addEventListener("scroll", function () {
+  let reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach((el) => {
+    let windowHeight = window.innerHeight;
+    let elementTop = el.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+});
