@@ -593,3 +593,32 @@ footer {
   color: white;
   margin-top: 50px;
 }
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode nav {
+  background-color: #1e1e1e;
+}
+
+.dark-mode a {
+  color: white;
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: #1f1f1f;
+}
+
+.dark-mode header {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .about-box {
+    background-color: #222;
+    color: white;
+}

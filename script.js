@@ -42,9 +42,8 @@ el.classList.add("show");
     });
   }
 });
-<script src="script.js"></script>
-</body>
-</html>
+
+window.addEventListener("scroll", function() {
 const hiddenElements = document.querySelectorAll('.hidden');
 
 window.addEventListener('scroll', () => {
