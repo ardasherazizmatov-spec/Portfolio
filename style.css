@@ -622,3 +622,19 @@ footer {
     background-color: #222;
     color: white;
 }
+.chat-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 250px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#chat {
+  height: 150px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  font-size: 14px;
+}

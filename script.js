@@ -83,3 +83,27 @@ window.addEventListener("scroll", function () {
     }
   });
 });
+function sendMessage() {
+  let input = document.getElementById("userInput").value.toLowerCase();
+  let chat = document.getElementById("chat");
+
+  let response = "I don't understand.";
+
+  if (input.includes("name")) {
+    response = "My name is Ardasher.";
+  } 
+  else if (input.includes("ielts")) {
+    response = "I have IELTS 6.0.";
+  } 
+  else if (input.includes("skills")) {
+    response = "I know HTML, CSS, and JavaScript.";
+  } 
+  else if (input.includes("project")) {
+    response = "Check my projects section!";
+  }
+
+  chat.innerHTML += "<p><b>You:</b> " + input + "</p>";
+  chat.innerHTML += "<p><b>AI:</b> " + response + "</p>";
+
+  document.getElementById("userInput").value = "";
+}
