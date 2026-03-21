@@ -42,12 +42,10 @@ el.classList.add("show");
     });
   }
 });
-
-window.addEventListener("scroll", function() {
-const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenelements = document.querySelectorAll('.hidden');
 
 window.addEventListener('scroll', () => {
-  hiddenElements.forEach(el => {
+  hiddenelements.forEach(el => {
     const elementTop = el.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 
